@@ -1,0 +1,45 @@
+body {
+  background: linear-gradient(to bottom, #87ceeb, #e0f7fa);
+  font-family: Arial, sans-serif;
+}
+
+#gameCanvas {
+  background: #f0f8ff;
+  max-width: 100%;
+  height: auto;
+  touch-action: none; /* Evita el scroll táctil */
+}
+
+.score-board {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.game-over {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1.2rem;
+  }
+  .score-board {
+    padding: 5px 10px;
+  }
+  .game-over {
+    width: 90%;
+  }
+}
